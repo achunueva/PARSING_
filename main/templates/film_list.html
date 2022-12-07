@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Sports</title>
+</head>
+<body>
+<center>
+    {% for i in list %}
+    <h2><a href="{{i.title}}">Посмотреть</a></h2>
+    <p>
+    <h2>{{i.title_text}}</h2>
+    </p>
+    <img src="{{ i.image }}" alt="ANi" width="400" height="400" >
+    {% endfor %}
+</center>
+</body>
+</html>
